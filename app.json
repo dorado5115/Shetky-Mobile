@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "shetky-mobile",
+    "slug": "shetky-mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "shetky-mobile"
+}
