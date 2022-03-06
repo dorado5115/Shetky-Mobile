@@ -3,17 +3,19 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { SignInScreen, QrScreen, FoodScreen, CardScreen  } from './components';
+import { QrScreen, FoodScreen, CardScreen, AccountScreen  } from './components';
+
+
 
 export default function App() {
-
   const Stack = createNativeStackNavigator();
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Qr'>
-        <Stack.Screen name="SignIn" component={SignInScreen} />
+      {/* Set header null */}
+      <Stack.Navigator initialRouteName='Card' headerMode="null" >
         <Stack.Screen name="Qr" component={QrScreen} />
+        <Stack.Screen name="Account" component={AccountScreen} />
         <Stack.Screen name="Food" component={FoodScreen} />
         <Stack.Screen name="Card" component={CardScreen} />
       </Stack.Navigator>

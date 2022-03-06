@@ -1,7 +1,7 @@
-import SignInScreen from "./SignInScreen";
 import QrScreen from "./QrScreen";
 import FoodScreen from "./FoodScreen";
 import CardScreen from "./CardScreen";
 import ScanScreen from "./ScanScreen";
+import AccountScreen from "./AccountScreen";
 
-export { SignInScreen, QrScreen, FoodScreen, CardScreen, ScanScreen };
+export {  QrScreen, FoodScreen, CardScreen, ScanScreen, AccountScreen };
