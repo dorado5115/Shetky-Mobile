@@ -20,4 +20,4 @@ And lastly in your preferred android emulator run:
 react-native run-android
 ```
 
-![Alt Text](https://giphy.com/embed/nDSlfqf0gn5g4)
+![Alt Text](https://media.giphy.com/media/nDSlfqf0gn5g4/giphy.gif)
