@@ -1,13 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { SignInScreen, QrScreen, FoodScreen, CardScreen  } from './components';
 
 export default function App() {
+
+  const Stack = createNativeStackNavigator();
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Qr'>
+        <Stack.Screen name="SignIn" component={SignInScreen} />
+        <Stack.Screen name="Qr" component={QrScreen} />
+        <Stack.Screen name="Food" component={FoodScreen} />
+        <Stack.Screen name="Card" component={CardScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
